@@ -3,9 +3,8 @@ import datetime
 from time import sleep
 
 # 1. CHIN TUCKS: 20 reps, 5 second hold, 4 times a day
-# 2. CHIN TUCK WITH TOWEL EXTENSION: 20 reps, 5 second hold, 2 times a day
-# 3. SCAPULAR PINCHES: 30 reps, 3 second hold, 2 times a day
-# 4. WALL ANGELS: 2 minutes, keep moving, once per day
+# 2. SCAPULAR PINCHES: 30 reps, 3 second hold, 2 times a day
+# 3. WALL ANGELS: 2 minutes, keep moving, once per day
 # https://www.youtube.com/watch?v=q5SsM9PWWYc
 
 
@@ -53,9 +52,15 @@ def main():
     routine = Routine(
         exercises=[
             Exercise(
+                desc="SHOULDER LUNGE",
+                reps=1,
+                hold=30,
+                rest=5
+            ),
+            Exercise(
                 desc="SCAPULAR PINCHES",
-                reps=30,
-                hold=3,
+                reps=25,
+                hold=5,
                 rest=5
             ),
             Exercise(
@@ -68,12 +73,6 @@ def main():
                 desc="WALL ANGELS",
                 reps=1,
                 hold=2*60,
-                rest=5
-            ),
-            Exercise(
-                desc="CHIN TUCK WITH TOWEL EXTENSION",
-                reps=20,
-                hold=5,
                 rest=5
             ),
         ],
